@@ -1,8 +1,8 @@
-#PostgreSQL with Python
+# PostgreSQL with Python
 This is a little tutorial for working with PostgreSQL in Python. \
 It is based on https://www.postgresqltutorial.com 
 
-#connect.py
+## connect.py
  - source: https://www.postgresqltutorial.com/postgresql-python/connect/ 
     
    - How it works:
@@ -12,14 +12,14 @@ It is based on https://www.postgresqltutorial.com
      - After that, read the result set by calling the  fetchone() method of the cursor object. 
      - Finally, close the communication with the database server by calling the close() method of the cursor and connection objects.
 
-#config.py
+## config.py
  - source: https://www.postgresqltutorial.com/postgresql-python/connect/ 
    - How it works:
      - First, import Parser
      - Next, in database.ini search for postgresql section
      - Finally, read a configuration
 
-#create_table.py
+## create_table.py
  - source: https://www.postgresqltutorial.com/postgresql-python/create-tables/ 
    - How it works:
      - First, construct CREATE TABLE statements. 
