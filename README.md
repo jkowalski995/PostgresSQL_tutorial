@@ -28,3 +28,14 @@ It is based on https://www.postgresqltutorial.com
      - After that, execute the CREATE TABLE by calling the execute() method of the cursor object. 
      - Finally, close the communication with the PostgreSQL database server by calling the close() methods of the cursor and connection objects.
  
+## insert_row.py and insert_many_rows.py and insert.py
+ - source: https://www.postgresqltutorial.com/postgresql-python/insert/ 
+   - How it works:
+     - First, connect to the PostgreSQL database server by calling the connect() function of the psycopg module. 
+     - Next, create a new cursor object by calling the cursor() method of the connection object. 
+     - Then, execute the INSERT statement with the input values by calling the execute() or executemany() method of the cursor object. 
+     - After that, use fetchone() to get returned value (in this case vendor_id). 
+     - Next, commit changes to save them permanently into database.
+     - Finally, close the communication with the PostgreSQL database server by calling the close() methods of the cursor and connection objects.
+          
+   #### insert.py is launching file for insert_row.py and insert_many_rows.py
